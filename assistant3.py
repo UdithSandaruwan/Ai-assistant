@@ -7,7 +7,7 @@ import json
 from Adafruit_IO import Client, RequestError, Feed
 
 # Set up OpenAI API key and text-to-speech engine
-openai.api_key = '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'
+openai.api_key = 'Open_ai_api_key'
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[1].id)
@@ -18,7 +18,7 @@ mic = sr.Microphone(device_index=1)
 
 # Set up Adafruit IO credentials
 aio_username = 'udith2005'
-aio_key = 'aio_nXcG02lcMBuy4Dx3lZ9zcfWOO8G5'
+aio_key = 'aio_api_key'
 toggle1_feed_name = 'led1'
 toggle2_feed_name = 'led2'
 
